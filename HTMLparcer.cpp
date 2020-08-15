@@ -126,3 +126,28 @@ int main() {
     }
     return 0;
 }
+
+/* Sample test cases (STDIN input)
+
+6 4
+<tag1 value = "HelloWorld">
+<tag2 name = "Name1">
+<tag3>
+</tag3>
+</tag2>
+</tag1>
+tag1.tag2~name
+tag1~name
+tag1~value
+tag1.tag2.tag3~name
+
+Output:
+Name1
+Not Found!
+HelloWorld
+Not Found!
+
+
+
+
+*/
